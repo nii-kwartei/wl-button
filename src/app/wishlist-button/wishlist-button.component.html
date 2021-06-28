@@ -1,0 +1,10 @@
+
+<button class="btn btn-primary btn-lg" [disabled]="isWishlisted" (click)="onClick()">
+    <span class="fa" 
+        [ngClass]="{
+            'fa-heart': isWishlisted,
+            'fa-heart-o': !isWishlisted
+        }"
+    ></span>
+    {{ wishlistLabel }}
+</button>
